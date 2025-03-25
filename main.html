@@ -1,16 +1,74 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Table and List</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+        thead {
+            background-color: #333;
+            color: white;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        ol {
+            width: 50%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Alice</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Charlie</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <h2 style="text-align:center;">List of Medias</h2>
+
+    <ol>
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Random Image">
+        </li>
+        <li>
+            <video width="320" height="240" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ol>
 </body>
-
 </html>
